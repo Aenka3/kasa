@@ -1,0 +1,31 @@
+@import './Main.css';
+
+/* GALLERY */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--tertiary);
+    border-radius: 25px;
+    width: 95%;
+    margin: 40px auto;
+    padding: 56px 50px;
+    
+}
+
+@media screen and (max-width: 1230px) {
+    .gallery {
+
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 982px) {
+
+    .gallery {
+
+        padding: 0;
+    }    
+}

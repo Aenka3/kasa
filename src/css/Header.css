@@ -1,0 +1,77 @@
+@import './Main.css';
+
+/* HEADER */
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    transition: all 1s;
+    padding-top: 40px;
+}
+    
+.header_logo {
+
+    transition: filter 1s;
+}
+
+.header_logo:hover {
+    filter: drop-shadow(0 0 30px var(--secondary));
+}
+
+.header_nav_links {
+
+    display: flex;
+    gap: 50px;
+    color: var(--secondary);
+    font-size: clamp(0.75rem, 0.5357rem + 1.0714vw, 1.5rem);
+    font-weight: 500;
+}
+
+.header_nav_links_link {
+    
+    transition: filter 1s, border 1s;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.header_nav_links_link:hover {
+
+    filter: drop-shadow(0 0 10px var(--secondary));
+}
+
+.header_nav_links_link_inactive {
+    padding-bottom: 5px;
+}
+
+.header_nav_links_link_inactive:hover:before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    border-bottom: 2px solid var(--secondary);
+    bottom: 0;
+    left: 30%;
+}
+
+.header_nav_links_link_active {
+    
+    border-bottom: 2px solid var(--secondary);
+}
+
+@media screen and (max-width: 500px){
+
+    .header_logo{
+
+        height: 47px;
+        width: 145px;
+    }
+
+    .header_nav_links {
+
+        gap: 20px;
+    }
+}

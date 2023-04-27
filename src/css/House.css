@@ -1,0 +1,202 @@
+@import './Main.css';
+
+/* LODGE */
+
+.lodge {
+    margin-bottom: -14px;
+}
+
+.lodge_content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--secondary);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lodge_content_infos {
+
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    height: 100%;
+}
+
+.lodge_content_infos_title {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: clamp(1.125rem, 0.8036rem + 1.6071vw, 2.25rem);
+    font-weight: 500;
+}
+
+.lodge_content_infos_location {
+    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+    margin-bottom: 20px;
+}
+
+.lodge_content_infos_tags {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);    
+}
+
+button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: var(--primary);
+    background-color: var(--secondary);
+    width: 115px;
+    transition: box-shadow 0.5s;
+}
+
+button:hover {
+
+    box-shadow: 0 0 15px var(--secondary);
+}
+
+.lodge_content_host {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+            
+
+.lodge_content_host_infos {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.lodge_content_host_infos_names {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(0.75rem, 0.6429rem + 0.5357vw, 1.125rem);
+}
+
+.lodge_content_host_infos_names_name {
+
+    margin-left: auto;
+    transition: text-shadow 0.5s;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.lodge_content_host_infos_names:hover
+.lodge_content_host_infos_names_name {
+
+    text-shadow: 0 0 8px rgb(0 0 0 / 0.5);
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 0;
+}
+
+.lodge_content_host_infos_img {
+
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.lodge_content_host_infos_img:hover {
+
+    box-shadow: 0 0 15px var(--secondary);
+}
+
+.lodge_content_host_stars {
+
+    display: flex;
+    gap: 15px;
+    margin: 20px 0 0;
+    padding-bottom: 7px;
+}
+
+.lodge_content_host_stars_img {
+
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: filter 0.5s;
+}
+
+.lodge_content_host_stars_img:hover {
+    filter: drop-shadow(0 0 5px var(--secondary));
+}
+
+@media screen and (max-width: 650px) {
+            
+    .lodge_content {
+
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lodge_content_infos_tags {
+
+        margin-top: 15px;
+    }
+
+    .lodge_content_host {
+
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lodge_content_host_stars {
+        
+        margin: auto 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .lodge_content_host_infos {
+
+        gap: 0 5px;
+    }
+}
+
+@media  screen and ( max-width: 415px ) {
+
+    .lodge_content_host {
+
+        margin-bottom: 10px;
+    }
+
+    .lodge_content_host_infos_img {
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .lodge_content_host_stars_img {
+
+        width: 13px;
+        height: 13px;
+    }
+}

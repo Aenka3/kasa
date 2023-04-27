@@ -1,0 +1,51 @@
+@import './Main.css';
+
+/* ERROR */
+
+.error {
+
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: var(--secondary);
+    margin: 50px 0;
+}
+    
+.error_infos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 250px);
+}
+        
+.error_title {
+
+    font-weight: 700;
+    font-size: clamp(6rem, 2.5714rem + 17.1429vw, 18rem);
+
+}
+
+.error_content {
+
+    font-weight: 500;
+    font-size: clamp(1.125rem, 0.8036rem + 1.6071vw, 2.25rem);
+    text-align: center;
+
+}
+
+.error_return {
+
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+}
+
+.error_return:hover {
+
+    text-shadow: 0 0 15px var(--secondary);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}

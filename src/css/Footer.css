@@ -1,0 +1,34 @@
+@import './Main.css';
+
+/* FOOTER */
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 209px;
+    background-color: #000;
+    gap: 50px;
+}
+
+.footer_logo {
+
+    width: 122px;
+    height: 39.44px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: filter 0.5s;
+}
+
+.footer_logo:hover {
+    filter: drop-shadow(0 0 10px var(--secondary));
+}
+
+.copyright {
+
+    color: var(--primary);
+    font-size: clamp(0.75rem, 0.5357rem + 1.0714vw, 1.5rem);
+}
