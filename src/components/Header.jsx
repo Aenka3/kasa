@@ -15,7 +15,7 @@ export default function Header() {
         
         <header className="header">
 
-            <Link to="/kasa/" onClick={ScrollToTop}>
+            <Link to="/" onClick={ScrollToTop}>
                 <img src={Logo} alt="Logo" className="header_logo" />
             </Link>
             
@@ -23,20 +23,20 @@ export default function Header() {
                 <div className="header_nav_links">
                     <div className="header_nav_links_link">
                         <Link 
-                            className={currentLocation === '/kasa' || currentLocation === '/kasa/'
+                            className={currentLocation === '/'
                                                             ? 'header_nav_links_link_active'
                                                             : 'header_nav_links_link_inactive'}
-                            to="/kasa/"
+                            to="/"
                             onClick={ScrollToTop}>
                                 Accueil
                         </Link>
                     </div>
                     <div className="header_nav_links_link">
                         <Link 
-                            className={currentLocation === '/kasa/aboutus'
+                            className={currentLocation === '/aboutus'
                                                                 ? 'header_nav_links_link_active'
                                                                 : 'header_nav_links_link_inactive'}
-                            to="/kasa/aboutus"
+                            to="/aboutus"
                         >
                                 À Propos
                         </Link>

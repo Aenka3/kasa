@@ -6,9 +6,8 @@
 
     max-width: 95%;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding: 50px 0;
     color: var(--secondary);
-    margin: 50px 0;
 }
     
 .error_infos {
@@ -17,14 +16,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 250px);
+    margin: 40px 0 150px;
 }
         
 .error_title {
 
     font-weight: 700;
     font-size: clamp(6rem, 2.5714rem + 17.1429vw, 18rem);
-
+    margin-bottom: 20px;
 }
 
 .error_content {
@@ -32,7 +31,6 @@
     font-weight: 500;
     font-size: clamp(1.125rem, 0.8036rem + 1.6071vw, 2.25rem);
     text-align: center;
-
 }
 
 .error_return {
@@ -41,6 +39,7 @@
     text-align: center;
     font-weight: 500;
     font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+    margin-bottom: 50px;
 }
 
 .error_return:hover {

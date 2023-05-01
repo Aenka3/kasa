@@ -99,6 +99,8 @@ export default function House() {
       </div>
     );
   } else {
-    return <Error />;
+    return (
+      <Error/>
+    );
   }
 }

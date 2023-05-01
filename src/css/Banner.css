@@ -10,20 +10,14 @@
     height: 223px;
     max-width: 95%;
     margin: 43px auto;
-    cursor: pointer;
-    box-shadow: 0 0 50px rgb(0 0 0 / 0.3);
+    box-shadow: 0 0 50px rgb(0 0 0 / 0.5);
     transition: all 1s;
-}
-
-.banner:hover {
-
-    box-shadow: 0 0 10px var(--secondary);
 }
 
 .banner_home {
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img//banner.jpg');
-    background-position: 50% 51.5%;
+    background-position: 0% 50%;
 }
 
 .banner_title {

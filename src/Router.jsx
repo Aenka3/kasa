@@ -7,17 +7,17 @@ import Error404 from './pages/Error404';
 
 const router = createBrowserRouter([
 	{
-		path: "/kasa/",
+		path: "/",
 		element: <Home/>,
 		errorElement: <Error404/>
 	},
 	{
-		path: "/kasa/housing/:id",
+		path: "/housing/:id",
 		element: <Housing/>,
 		errorElement: <Error404/>
 	},
 	{
-		path: '/kasa/aboutus',
+		path: '/aboutus',
 		element: <AboutUs/>,
 		errorElement: <Error404/>
 	},

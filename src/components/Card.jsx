@@ -8,7 +8,7 @@ export default function Card({id, title, cover}) {
 
 	return (
 
-			<Link to={`/kasa/housing/${id}`} className="card" onClick={ScrollToTop}>
+			<Link to={`/housing/${id}`} className="card" onClick={ScrollToTop}>
 				<img className='card_img' src={cover} alt={title} />
 				<h2 className='card_h2'>{title}</h2>
 			</Link>

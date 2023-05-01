@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 
 import '../css/Banner.css';
 
-import ScrollBanner from './scroll/ScrollBanner';
-
 export default function Banner() {
 
 	const [home, setHome] = useState(true);
@@ -17,14 +15,13 @@ export default function Banner() {
 			setHome(false)
 		}
 		// eslint-disable-next-line
-	}, [])
+	}, [currentLocation])
 
 	return (
 
 		<div className={home
 							 ? 'banner banner_home'
 							 : 'banner banner_about'}
-				 onClick={ScrollBanner}
 		>
 			{home && <h1 className='banner_title'>Chez vous, partout et ailleurs</h1>}
 		</div>
