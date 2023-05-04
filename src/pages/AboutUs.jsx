@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from '../components/Footer';
 import About from '../components/About';
 
+import ScrollToTop from '../components/scroll/ScrollToTop';
+
 export default function AboutUs() {
 
 	return (
@@ -14,6 +16,7 @@ export default function AboutUs() {
 				</main>
 			</div>
 			<Footer/>
+			<ScrollToTop/>
 		</div>
 	)
 }

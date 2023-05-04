@@ -10,17 +10,13 @@ export default function About() {
 	return (
 
         <div>
-
             <section>
                 <Banner/>
             </section>
-
             <section>
                 <div className='about'>
                     {datas.map(data => {
-
                         return (
-
                             <div key={data.id} className="about_collapse">
                                 <Collapse title={data.title} content={data.content}/>
                             </div>
@@ -28,7 +24,6 @@ export default function About() {
                     )}
                 </div>
             </section>
-            
         </div>
 	)
 }

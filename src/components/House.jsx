@@ -100,7 +100,9 @@ export default function House() {
     );
   } else {
     return (
-      <Error/>
+      <>
+        <Error/>
+      </>
     );
   }
 }

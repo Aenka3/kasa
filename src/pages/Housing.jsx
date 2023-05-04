@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import House from '../components/House';
 import Footer from '../components/Footer';
 
+import ScrollToTop from '../components/scroll/ScrollToTop';
+
 export default function Housing() {
 	return (
 		<div className='page'>
@@ -12,6 +14,7 @@ export default function Housing() {
 				</main>
 			</div>
 			<Footer/>
+			<ScrollToTop/>
 		</div>
 	)
 }

@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from '../components/Footer';
 import Error from '../components/Error';
 
+import ScrollToTop from '../components/scroll/ScrollToTop';
+
 export default function Error404() {
 
 	return (
@@ -14,6 +16,7 @@ export default function Error404() {
 				</main>
 			</div>
 			<Footer/>
+			<ScrollToTop/>
 		</div>
 	)
 }
