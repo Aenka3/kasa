@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import '../css/Header.css';
 
-import ScrollAbout from "./scroll/ScrollAbout";
 import ScrollToTop from './scroll/ScrollToTop'
 
 import Logo from "../img/logo.svg";
@@ -27,7 +26,8 @@ export default function Header() {
                                                             ? 'header_nav_links_link_active'
                                                             : 'header_nav_links_link_inactive'}
                             to="/"
-                            onClick={ScrollToTop}>
+                            onClick={ScrollToTop}
+                        >
                                 Accueil
                         </Link>
                     </div>
@@ -37,6 +37,7 @@ export default function Header() {
                                                                 ? 'header_nav_links_link_active'
                                                                 : 'header_nav_links_link_inactive'}
                             to="/aboutus"
+                            onClick={ScrollToTop}
                         >
                                 À Propos
                         </Link>
