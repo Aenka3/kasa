@@ -1,23 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import '../css/Header.css';
-
-//import ScrollToTop from './scroll/ScrollToTop'
 
 import Logo from "../img/logo.svg";
 
 export default function Header() {
 
-    const currentLocation = window.location.pathname;
+    const currentLocation = useLocation().pathname;
 
     return (
         
         <header className="header">
-
             <Link to="/">
                 <img src={Logo} alt="Logo" className="header_logo" />
             </Link>
-            
             <nav className="header_nav">
                 <div className="header_nav_links">
                     <div className="header_nav_links_link">

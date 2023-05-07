@@ -4,10 +4,9 @@ import "../css/House.css";
 
 import datas from "../datas/HousingDatas.js";
 
-import Error from "./Error";
-
 import Slider from "./Slider";
 import Collapse from "./Collapse";
+import Error from "./Error";
 
 import redStar from "../img/red_star.svg";
 import greyStar from "../img/grey_star.svg";
@@ -100,9 +99,7 @@ export default function House() {
     );
   } else {
     return (
-      <>
-        <Error/>
-      </>
+      <Error/>
     );
   }
 }
